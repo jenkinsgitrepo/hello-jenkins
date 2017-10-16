@@ -1,7 +1,7 @@
 #!/bin/sh
  
-ssh jenkins@18.221.248.67 <<EOF
-  cd ~/hello-jenkins
+ssh jenkins@172.31.16.5 <<EOF
+  cd ~/hello-jenkins-d
   git pull
   npm install --production
   forever restartall
